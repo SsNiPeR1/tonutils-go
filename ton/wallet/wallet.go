@@ -13,8 +13,9 @@ import (
 	"encoding/hex"
 	"errors"
 	"fmt"
-	"github.com/xssnick/tonutils-go/adnl"
 	"time"
+
+	"github.com/xssnick/tonutils-go/adnl"
 
 	"github.com/xssnick/tonutils-go/ton"
 
@@ -36,6 +37,7 @@ const (
 	V3                         = V3R2
 	V4R1               Version = 41
 	V4R2               Version = 42
+	V5R1               Version = 51
 	HighloadV2R2       Version = 122
 	HighloadV2Verified Version = 123
 	HighloadV3         Version = 300
@@ -70,6 +72,7 @@ var (
 		V2R1: _V2R1CodeHex, V2R2: _V2R2CodeHex,
 		V3R1: _V3R1CodeHex, V3R2: _V3R2CodeHex,
 		V4R1: _V4R1CodeHex, V4R2: _V4R2CodeHex,
+		V5R1:         _V5R1CodeHex,
 		HighloadV2R2: _HighloadV2R2CodeHex, HighloadV2Verified: _HighloadV2VerifiedCodeHex,
 		HighloadV3: _HighloadV3CodeHex,
 		Lockup:     _LockupCodeHex,
